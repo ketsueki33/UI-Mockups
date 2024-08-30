@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    background-color: rgb(5, 5, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+}
+
+button {
+    --blue: #0173ff;
+    --radius: 50px;
+    --rotate: 0deg;
+    padding: 15px 60px;
+    border-radius: var(--radius);
+    background: var(--blue);
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    .fancy {
+        position: absolute;
+        inset: 0;
+
+        &::before {
+            content: "";
+            background: conic-gradient(
+                from var(--rotate),
+                transparent 0%,
+                white 5%,
+                transparent 10%
+            );
+            position: absolute;
+            inset: 0;
+            animation: rotate 2s linear infinite;
+        }
+
+        &::after {
+            content: "";
+            background: var(--blue);
+            position: absolute;
+            inset: 3px;
+            border-radius: calc(var(--radius) - 3px);
+        }
+    }
+
+    .text {
+        position: relative;
+    }
+}
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes rotate {
+    to {
+        --rotate: 360deg;
+    }
+}
