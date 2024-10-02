@@ -10,8 +10,9 @@
 ### Tech & Tools
 
 -   React
--   TypeScript
 -   Tailwind
+-   TypeScript
+
 
 ### Get it Running
 
