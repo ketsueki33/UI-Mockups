@@ -1,4 +1,4 @@
-## Fancy Button with revolving glitter
+## Night Sky Card
 
 <img src="./src/assets/night-sky-card-demo.gif" alt="demo" width="550"/>
 
