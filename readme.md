@@ -8,6 +8,10 @@ This repository contains a collection of small UI mockups that I've created. Som
 
 <img src="./night-sky-card/src/assets/night-sky-card-demo.gif" alt="demo" width="400"/>
 
+#### [Fancy Glow](./fancy-glow)
+
+<img src="./fancy-glow/demo.gif" alt="demo" width="400"/>
+
 ## Installation
 
 To explore these mockups locally:
